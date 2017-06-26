@@ -1,0 +1,6 @@
+#scenarios and configurations
+logs
+models
+scenarios
+*.ini
+*.pyc
