@@ -18,16 +18,16 @@ from vizdoom import *
 # Options:
 resolution = ScreenResolution.RES_320X240
 screen_format = ScreenFormat.CRCGCB
-depth_buffer = False
-labels_buffer = False
-automap_buffer = False
+depth_buffer = True
+labels_buffer = True
+automap_buffer = True
 
 iterations = 10000
 
 #####################################################################
 
 game = DoomGame()
-game.load_config("../../scenarios/basic.cfg")
+game.load_config("./scenarios/basic.cfg")
 #game.add_game_args("-file ../../bin/textures.pk3 ../../scenarios/basic.wad")
 #game.add_game_args("-file ../../bin/textures.pk3 ../../scenarios/basic.wad")
 

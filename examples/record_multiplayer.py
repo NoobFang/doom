@@ -10,7 +10,7 @@ from multiprocessing import Process
 def player1():
     game = DoomGame()
 
-    game.load_config('../../scenarios/multi_duel.cfg')
+    game.load_config('./scenarios/multi_duel.cfg')
     game.add_game_args("-host 2 -deathmatch +timelimit 0.15 +sv_spawnfarthest 1 ")
     game.add_game_args("+name Player1 +colorset 0")
 
@@ -35,7 +35,7 @@ def player1():
 def player2():
     game = DoomGame()
 
-    game.load_config('../../scenarios/multi_duel.cfg')
+    game.load_config('./scenarios/multi_duel.cfg')
     game.set_window_visible(False)
     game.add_game_args("-join 127.0.0.1")
     game.add_game_args("+name Player2 +colorset 3")
@@ -56,9 +56,10 @@ def player2():
 
 def replay_as_player2():
     game = DoomGame()
-    game.load_config('../config/multi_duel.cfg')
+    game.load_config('./scenarios/multi_duel.cfg')
     # At this moment ViZDoom will crash if there is no starting point - this is workaround for multiplayer map.
     game.add_game_args("-host 1 -deathmatch")
+    game.set_mode(Mode.SPECTATOR)
 
     game.init()
 

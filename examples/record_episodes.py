@@ -14,7 +14,7 @@ from vizdoom import *
 game = DoomGame()
 
 # Use other config file if you wish.
-game.load_config("../../scenarios/basic.cfg")
+game.load_config("./scenarios/basic.cfg")
 game.set_episode_timeout(100)
 
 # Record episodes while playing in 320x240 resolution without HUD

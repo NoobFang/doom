@@ -24,7 +24,7 @@ def play(game):
 def player1():
     game = DoomGame()
 
-    game.load_config('../../scenarios/basic.cfg')
+    game.load_config('./scenarios/basic.cfg')
     game.set_mode(Mode.ASYNC_PLAYER)
 
     # Default Doom's ticrate is 35 per second, so this one will work 2 times faster.
@@ -36,7 +36,7 @@ def player1():
 def player2():
     game = DoomGame()
 
-    game.load_config('../../scenarios/basic.cfg')
+    game.load_config('./scenarios/basic.cfg')
     game.set_mode(Mode.ASYNC_PLAYER)
 
     # And this one will work 2 times slower.

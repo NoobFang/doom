@@ -22,7 +22,7 @@ window = True
 
 args =""
 console = False
-config = "../../scenarios/multi_duel.cfg"
+config = "./scenarios/multi_duel.cfg"
 
 def player_host(p):
     game = DoomGame()

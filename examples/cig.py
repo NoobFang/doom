@@ -8,7 +8,7 @@ import sys
 game = DoomGame()
 
 # Use CIG example config or your own.
-game.load_config("../../scenarios/cig.cfg")
+game.load_config("./scenarios/cig.cfg")
 
 game.set_doom_map("map01")  # Limited deathmatch.
 #game.set_doom_map("map02")  # Full deathmatch.
